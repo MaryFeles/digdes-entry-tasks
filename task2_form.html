@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Task2</title>
+</head>
+<body>
+    <form action="#" class="registration-form">
+        <div class="registration-form_title">Регистрация</div>
+        <div class="input-wrapper">            
+            <label id="email">E-mail<input type="email" placeholder="example@site.domain" required></label>
+            <label id="pass">Пароль<input type="password" placeholder="password" required></label>
+            <label id="pass-again">Повторите пароль<input type="password" placeholder="password" required></label>            
+            <label id="name">ФИО<input type="text" placeholder="Игорев Игорь Игоревич" required maxlength="100" pattern="[А-Я][а-я]{2,}\s[А-Я][а-я]{2,}\s[А-Я][а-я]{2,}"></label>
+            <label id="age">Возраст<input type="number" min="10" max="100" step="1" placeholder="18" required></label>
+        </div>        
+        <div class="btn-wrapper">
+            <button type="submit">Отправить</button>
+            <button type="button">Отмена</button>
+        </div>        
+    </form>
+</body>
+</html>
